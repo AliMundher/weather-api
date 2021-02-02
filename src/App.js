@@ -10,7 +10,7 @@ class App extends React.Component {
     country: "",
     city: "",
     humidity: "",
-    main: "",
+    temp: "",
     description: "",
     error: ""
   }
@@ -29,7 +29,7 @@ class App extends React.Component {
         country: data.sys.country,
         city: data.name,
         humidity: data.main.humidity,
-        main: data.weather[0].main,
+        temp: data.main.temp,
         description: data.weather[0].description,
         error: ""
       });
@@ -39,7 +39,7 @@ class App extends React.Component {
         country: '',
         city: '',
         humidity: '',
-        main: '',
+        temp: '',
         description: '',
         error: "Please Input Your Data"
       });
@@ -56,7 +56,7 @@ class App extends React.Component {
           country={this.state.country}
           city={this.state.city}
           humidity={this.state.humidity}
-          main={this.state.main}
+          temp={this.state.temp}
           description={this.state.description}
           error={this.state.error} />
 

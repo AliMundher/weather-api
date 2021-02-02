@@ -41,3 +41,10 @@ form .btn_sub {
   margin-bottom: 28px;
   font-size: 1.3em;
 }
+
+.weather>p {
+  border-bottom: 1px solid black;
+  padding: 10px;
+  font-size: 1.1em;
+  text-transform: capitalize;
+}
